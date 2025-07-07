@@ -18,8 +18,8 @@
         <p>
           You <em>know</em> you want to.
         </p>
-      </fieldset>
-      <fieldset class="set2">
+       </fieldset>
+       <fieldset class="set2">
         <div class="heading">
           <h2>Let's do this!</h2>
         </div>
@@ -34,7 +34,9 @@
           </label>
           <label>
             <span>Password</span>
-            <input type="password" id="pwd" name="pwd" />
+            <input type="password" id="pwd" name="pwd" 
+                   pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                   required />
           </label>
         </div>
         <div>
@@ -48,7 +50,8 @@
           </label>
           <label>
             <span>Confirm Password</span>
-            <input />
+            <input type="password" id="con-pwd" name="con-pwd" 
+                   pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required />
           </label>
         </div>
       </fieldset>
@@ -57,5 +60,5 @@
         <p>Already have an account? <a>Log in</a></p>
       </fieldset>
     </form>
-   </body>
+  </body>
 </html>
