@@ -7,6 +7,12 @@
    </head>
 
    <body>
+    <div class="image">
+      <h1>
+        <img src="" />
+        Odin
+      </h1>
+    </div>
     <form>
       <fieldset class="set1">
         <p>
@@ -25,15 +31,15 @@
         </div>
         <div>
           <label>
-            <span>First Name</span>
+            <span>FIRST NAME</span>
             <input type="fname" id="fname" name="fname" />
           </label>
           <label>
-            <span>Email</span>
+            <span>EMAIL</span>
             <input type="email" id="mail" name="mail" />
           </label>
           <label>
-            <span>Password</span>
+            <span>PASSWORD</span>
             <input type="password" id="pwd" name="pwd" 
                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
                    required />
@@ -41,23 +47,25 @@
         </div>
         <div>
           <label>
-            <span>Last Name</span>
+            <span>LAST NAME</span>
             <input type="text" id="lname" name="lname" />
           </label>
           <label>
-            <span>Phone Number</span>
+            <span>PHONE NUMBER</span>
             <input type="tel" id="phone" name="phone" />
           </label>
           <label>
-            <span>Confirm Password</span>
+            <span>CONFIRM PASSWORD</span>
             <input type="password" id="con-pwd" name="con-pwd" 
                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required />
           </label>
         </div>
       </fieldset>
       <fieldset class="set3">
-        <button>Create Account</button>
-        <p>Already have an account? <a>Log in</a></p>
+        <div>
+          <button>Create Account</button>
+          <p>Already have an account? <a>Log in</a></p>
+        </div>
       </fieldset>
     </form>
   </body>

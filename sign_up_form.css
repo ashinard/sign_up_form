@@ -1,45 +1,69 @@
 html{
   background-color: black;
   padding-bottom: 20px;
+  height: 1000px;
 }
 
 body{
   display: flex;
   justify-content: flex-end;
-  width: 75%;
-  height: 100%;
+  flex-direction: row;
+  width: 70%;
+  height: 1006px;
   margin: 0 auto 0 auto;
   background-color: white;
-  padding: 0 0 15px 0;
+}
+
+.image{
+  display: flex;
+  align-items: start;
+  height: 100%;
+  width: 37%;
+  background-image: url("Pictures/fern_pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image h1{
+  position: relative;
+  top: 152px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 120px;
+  font-size: 3em;
 }
 
 form{
   position: relative;
   left: 16px;
-  width: 60%;
-  height: 100%;
-  margin: 0 40px 0px 0px;
+  width: 63%;
+  margin: 0 41px 0px -17px;
   font: 0.9em Arial, sans-serif;
   font-weight: bold;
 }
 fieldset{
   width: 100%;
-  margin: 10px 2px -12px 0;
+  border-style: none;
 }
 
 .set1{
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
-  padding: 80px 0 20px 21px;
-  font-size: 1.2em;
+  justify-content: end;
+  height: 20%;
+  background-color: #F5F5F5;
+  padding: 90px 0 20px 22px;
+  font-size: 1.4em;
 }
 
 .set1 p:first-child{
   display: inline;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: 150px;
+  margin-right: 260px;
+  margin-bottom: 2px;
 }
 
 .set2{
@@ -48,11 +72,13 @@ fieldset{
   flex-wrap: wrap;
   font-size: 0.8em;
   padding-right: 13px;
+  padding-bottom: 20px;
 }
 
 .heading{
   width: 100%;
   margin: auto;
+  font-size: 0.9rem;
 }
 
 .set2 div{
@@ -64,7 +90,8 @@ fieldset{
 label{
   margin: 5px 20px;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  letter-spacing: 1px;
 }
 
 span{
@@ -75,7 +102,7 @@ input{
   appearance: none;
   outline: none;
   margin: 10px 0 10px 0;
-  height: 25px;
+  height: 1.7rem;
   width: 250px;
   border-radius: 5px;
   border-width: 1px;
@@ -97,8 +124,15 @@ input:invalid:empty{
 }
 
 .set3{
-  padding-bottom: 80px;
+  padding-bottom: 100px;
+  padding-right: 11px;
+  height: 27%;
+  background-color: #F5F5F5;
   box-shadow: inset -2px 3px 6px #E5E7EB;
+}
+
+.set3 div{
+  margin-left: 30px;
 }
 
 button{
