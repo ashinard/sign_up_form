@@ -1,7 +1,13 @@
+@font-face {
+  font-family: norseBold;
+  src: url("Fonts/Norse-Bold.woff2") format("woff2");
+  src: url("Fonts/Norse-Bold.woff") format("woff");
+}
+
 html{
   background-color: black;
   padding-bottom: 20px;
-  height: 1000px;
+  height: 985px;
 }
 
 body{
@@ -9,7 +15,7 @@ body{
   justify-content: flex-end;
   flex-direction: row;
   width: 70%;
-  height: 1006px;
+  height: 985px;
   margin: 0 auto 0 auto;
   background-color: white;
 }
@@ -29,10 +35,19 @@ body{
   top: 152px;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px 120px;
-  font-size: 3em;
+  color: white;
+  padding: 20px 120px;
+  font-size: 5.5em;
+  font-family: norseBold;
+}
+
+img{
+  height: 110px;
+  width: 80px;
+  margin-right: 10px;
 }
 
 form{
@@ -54,7 +69,7 @@ fieldset{
   justify-content: end;
   height: 20%;
   background-color: #F5F5F5;
-  padding: 90px 0 20px 22px;
+  padding: 90px 0 40px 22px;
   font-size: 1.4em;
 }
 
@@ -124,7 +139,7 @@ input:invalid:empty{
 }
 
 .set3{
-  padding-bottom: 100px;
+  padding-bottom: 75px;
   padding-right: 11px;
   height: 27%;
   background-color: #F5F5F5;
